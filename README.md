@@ -1,12 +1,50 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🛠️ React Skip Selector UI
 
-Currently, two official plugins are available:
+A simple React component-based interface for selecting skip sizes and navigating between different steps in a multi-step flow, built with React and Redux.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📁 Project Structure
+Components
+Header.jsx
+Displays a top navigation bar with step buttons.
+(I used custom router )
 
-## Expanding the ESLint configuration
+Uses Redux to track the current step (currentIndex) in the flow.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Buttons:
+
+Are active up to the current step.
+
+Allow backward navigation only.
+
+Visually reflect current progress via conditional class names.
+
+Main.jsx
+Displays the main content of the page.
+
+Shows a title and a list of selectable skip items.
+
+Each skip item is rendered using the SkipItem component.
+
+Data is sourced from SkipData (imported from a separate data file).
+
+🧠 Key Technologies
+React: UI library for rendering components.
+
+Redux: Global state management (used here for step/page tracking).
+
+Tailwind CSS or Custom CSS: Styling is handled through class names (header.css and other custom classes).
+
+🔄 Navigation Logic
+The current page index is stored in Redux (state.page.currentIndex).
+
+Clicking on a button:
+
+Will only dispatch an action to update the page if the button is from a previous step.
+
+This is useful for preventing accidental forward navigation unless explicitly allowed.
+
+
+
+
+
