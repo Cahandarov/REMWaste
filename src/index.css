@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+  /* border: 1px solid red !important; */
+}
+@import "tailwindcss";
+
+.app {
+  background-color: #121212;
+  width: 100%;
+  min-height: 100vh;
+  height: max-content;
+}
+
+.layout {
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+}
+.pages {
+  width: 100%;
+  padding: 40px;
+  min-height: 88vh;
+  height: max-content;
+}

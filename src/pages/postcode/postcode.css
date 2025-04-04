@@ -1,0 +1,11 @@
+#mainBg {
+    width: 40%;
+    height: 40%;
+}
+.postcode {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

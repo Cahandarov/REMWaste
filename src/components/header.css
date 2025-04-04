@@ -1,0 +1,64 @@
+.header {
+    width: 100%;
+    height: 80px;
+    padding: 28px 170px;
+}
+.headerUL {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.btn {
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.btnImgDefault {
+    width: 25px;
+    height: 25px;
+    filter: brightness(0) saturate(100%) invert(30%) sepia(10%) saturate(500%) hue-rotate(180deg);
+}
+
+.btnImgActive {
+    width: 25px;
+    height: 25px;
+    filter: invert(9%) sepia(99%) saturate(5630%) hue-rotate(246deg) brightness(111%) contrast(148%);
+}
+
+.btnLineDefault {
+    width: 65px;
+    height: 1px;
+    background-color: #42464ada;
+}
+
+.btnLineActive {
+    width: 65px;
+    height: 2px;
+    background-color: #0037c1;
+}
+.btnTextDefault {
+    font-family: "Roboto", sans-serif;
+    line-height: 2;
+    font-weight: 400;
+    font-size: 17px;
+    color: #838383;
+}
+.btnTextActive {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-weight: 500;
+    line-height: 2;
+    font-size: 17px;
+}
+
+.btnActive {
+    cursor: pointer;
+}
+.btnDefault {
+    cursor: not-allowed;
+}
